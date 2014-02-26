@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -38,7 +37,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Location = new System.Drawing.Point(0, 2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 13);
             this.label1.TabIndex = 0;
@@ -47,15 +46,15 @@
             // textBox1
             // 
             this.textBox1.AcceptsTab = true;
-            this.textBox1.Location = new System.Drawing.Point(2, 14);
+            this.textBox1.Location = new System.Drawing.Point(2, 16);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(380, 213);
+            this.textBox1.Size = new System.Drawing.Size(380, 220);
             this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(297, 233);
+            this.button1.Location = new System.Drawing.Point(307, 239);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
@@ -66,7 +65,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(12, 239);
+            this.checkBox1.Location = new System.Drawing.Point(12, 243);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(127, 17);
             this.checkBox1.TabIndex = 3;
@@ -79,12 +78,13 @@
             this.AcceptButton = this.button1;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 262);
+            this.ClientSize = new System.Drawing.Size(384, 266);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximumSize = new System.Drawing.Size(400, 300);
             this.MinimumSize = new System.Drawing.Size(400, 300);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

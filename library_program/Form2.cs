@@ -38,7 +38,8 @@ namespace library_program
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
-                if (checkBox1.Checked)  Form2.ActiveForm.AcceptButton = null;
+            if (checkBox1.Checked) Form2.ActiveForm.AcceptButton = null;
+            else Form2.ActiveForm.AcceptButton = button1;
         }
     }
 }
