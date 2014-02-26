@@ -30,6 +30,12 @@ namespace library_program
                 Filter = "Список книг|*.xml"};
             var result = sfd.ShowDialog(this);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 subForm = new Form2(this);
+            subForm.Show();
+        }
     }
 
 }

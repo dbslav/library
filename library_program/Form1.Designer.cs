@@ -123,6 +123,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Добавить";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -147,10 +148,10 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        public System.Windows.Forms.ListBox listBox1;
     }
 }
 
