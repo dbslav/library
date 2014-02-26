@@ -19,31 +19,26 @@ namespace library_program
 
         Form1 mainForm;
 
-        public Form2(Form1 mainForm)
-        {
+        public Form2(Form1 mainForm)        {
             this.mainForm = mainForm;
             InitializeComponent();
-
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (this.textBox1.Text != string.Empty)
-            {
-
-                mainForm.listBox1.Items.Clear();
+        private void button1_Click(object sender, EventArgs e)        {
+            if (this.textBox1.Text != string.Empty)         {
 
                 string[] stringsEntered = textBox1.Lines;
 
-                for (int count = 0; count < stringsEntered.Length; count++)
-                {
-
+                for (int count = 0; count < stringsEntered.Length; count++)                {
                     mainForm.listBox1.Items.Add(stringsEntered[count]);
-
-                }
-
+                    }
             }
             this.Close();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+                if (checkBox1.Checked)  Form2.ActiveForm.AcceptButton = null;
         }
     }
 }

@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
             this.save_button = new System.Windows.Forms.Button();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.clear = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
+            this.add = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -96,8 +98,9 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button4);
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.clear);
+            this.groupBox2.Controls.Add(this.delete);
+            this.groupBox2.Controls.Add(this.add);
             this.groupBox2.Controls.Add(this.listBox1);
             this.groupBox2.Location = new System.Drawing.Point(12, 45);
             this.groupBox2.Name = "groupBox2";
@@ -106,24 +109,35 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Список литературы";
             // 
-            // button4
+            // clear
             // 
-            this.button4.Location = new System.Drawing.Point(278, 48);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Удалить";
-            this.button4.UseVisualStyleBackColor = true;
+            this.clear.Location = new System.Drawing.Point(278, 77);
+            this.clear.Name = "clear";
+            this.clear.Size = new System.Drawing.Size(75, 23);
+            this.clear.TabIndex = 7;
+            this.clear.Text = "Очистить";
+            this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
-            // button3
+            // delete
             // 
-            this.button3.Location = new System.Drawing.Point(278, 19);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Добавить";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.delete.Location = new System.Drawing.Point(278, 48);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 5;
+            this.delete.Text = "Удалить";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // add
+            // 
+            this.add.Location = new System.Drawing.Point(278, 19);
+            this.add.Name = "add";
+            this.add.Size = new System.Drawing.Size(75, 23);
+            this.add.TabIndex = 4;
+            this.add.Text = "Добавить";
+            this.add.UseVisualStyleBackColor = true;
+            this.add.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -133,6 +147,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Библиотека";
             this.groupBox1.ResumeLayout(false);
@@ -149,9 +164,10 @@
         private System.Windows.Forms.Button save_button;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.Button add;
         public System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button clear;
     }
 }
 
